@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form!</title>
+    <style>
+        a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body style="padding:50px;">
+    <table style="width:100%;">
+        <tr>
+            <td style="width:50%;vertical-align: top;">
+               
+                    <h1 style="background-color: cyan; font-size: 20px; display: inline-table;"><b><ins>Fill Here the Registration
+                                Form!</ins></b></h1>
+              
+                <table>
+                    <tr>
+                        <td style="width:30%;">
+                            First Name :
+                        </td>
+                        <td style="width:70%;">
+                            <input id="first_name" name="firstname" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Last Name :
+                        </td>
+                        <td>
+                            <input id="last_name" name="lastname" type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Email Id :
+                        </td>
+                        <td>
+                            <input id="email_id" name="emailid" type="email">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Mobile No. :
+                        </td>
+                        <td>
+                            <input id="mobile_no" name="mobileno" type="tel">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Address :
+                        </td>
+                        <td>
+                            <input id="p_address" name="paddress" type="text">
+                        </td>
+                    </tr>
+                </table>
+               <button onclick="submit()">SUBMIT</button> 
+            </td>
+           
+
+    <script>
+        function submit() {
+            var firstname = document.getElementById("first_name").value;
+            document.getElementById("divfirst_name").innerHTML = firstname;
+
+            var lastname = document.getElementById("last_name").value;
+            document.getElementById("divlast_name").innerHTML = lastname;
+
+            var emailid = document.getElementById("email_id").value;
+            document.getElementById("divemail_id").innerHTML = emailid;
+
+            var mobileno = document.getElementById("mobile_no").value;
+            document.getElementById("divmobile_no").innerHTML = mobileno;
+
+            var paddress = document.getElementById("p_address").value;
+            document.getElementById("divp_address").innerHTML = paddress;
+
+        }
+    </script>
+
+</body>
+
+</html>

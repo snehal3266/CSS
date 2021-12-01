@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <style>
+    h1{
+        background-color: aqua;
+        color: black;
+        font-family: "Times New Roman", Times, serif;
+        display: inline;  
+
+    }
+
+</style>
+</head>
+<body align="center" background-image="login.jpg">
+    <div style="border-style:double ; border-width: 5px; border-image-outset: 10px; padding: 60px; display:inline-table;">
+
+    <h1>Login Here!</h1> <br /> <br /> <br />
+
+    <i class="fa fa-user"> </i> &nbsp;  <input id="user_name" type="text" name="user_name" placeholder="USER NAME"> <br /> <br />
+
+    <i class="fa fa-lock"> </i> &nbsp; <input id="user_password" type="password" name="user_password" placeholder="Password"> <br /> <br />
+     
+    <div id="divuser_name"> </div> 
+
+    <div id="divuser_password"> </div> 
+   
+    <button onclick="login()" style="background-color: red; opacity: 0.5;"><a href="registration.html">LOGIN </a> <i class="fa fa-angle-double-right"> </i> </button>
+
+</div>
+<script>
+    function login() {
+        var user_name = document.getElementById("user_name").value;
+        document.getElementById("divuser_name").innerHTML = user_name;
+
+        var user_password = document.getElementById("user_password").value;
+        document.getElementById("divuser_password").innerHTML = user_password;
+
+        alert("Alert!");
+    }
+
+</script>
+
+    
+</body>
+</html>
